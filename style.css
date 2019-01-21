@@ -16,6 +16,6 @@ p{
 img{
 	width: 100%;
 }
-input{
-	display: inline-block;
+label, input{
+	display: block;
 }
