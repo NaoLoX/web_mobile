@@ -1,6 +1,11 @@
+h1{
+	font-size: 8vw;
+
+}
 p{
 	width: 100%;
 	text-align: justify;
+	font-size: 1.6rem;
 }
 #p1{
 	background-color: blue;
@@ -16,7 +21,7 @@ p{
 #mairie{
 	width: 1280px;
 	background-image: url(images/calais-l.jpg);
-	height: 980px;
+	height: 960px;
 }
 #logo{
 	width: 300px;
@@ -25,6 +30,7 @@ p{
 }
 label, input{
 	display: block;
+	font-size: 1.6rem;
 }
 
 @media screen and (max-width: 414px){
@@ -35,14 +41,13 @@ label, input{
 		width: 100%;
 		background-size: contain;
 		background-repeat: no-repeat;
-		height: 34vh;
+		height: 37vh;
 	}
+	@media (min-resolution:192dpi){
+		#mairie{
+			background-image: url(images/calais-xl.jpg);
+		}
 }
-@media (min-resolution:192dpi){
-	#mairie{
-		background-image: url(images/calais-xl.jpg);
-		background-size:50%;
-	}
 }
 @media screen and (min-width: 480px) and (max-width:1024px){
 
