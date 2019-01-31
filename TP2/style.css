@@ -1,0 +1,49 @@
+p{
+	width: 100%;
+	text-align: justify;
+}
+#p1{
+	background-color: blue;
+}
+
+#p2{
+	background-color: white;
+}
+
+#p3{
+	background-color: red;
+}
+#mairie{
+	width: 1280px;
+	background-image: url(images/calais-l.jpg);
+	height: 980px;
+}
+#logo{
+	width: 300px;
+	display: block;
+	margin:auto;
+}
+label, input{
+	display: block;
+}
+
+@media screen and (max-width: 414px){
+	#logo{
+		width:100%;
+	}
+	#mairie{
+		width: 100%;
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 34vh;
+	}
+}
+@media (min-resolution:192dpi){
+	#mairie{
+		background-image: url(images/calais-xl.jpg);
+		background-size:50%;
+	}
+}
+@media screen and (min-width: 480px) and (max-width:1024px){
+
+}
