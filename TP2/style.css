@@ -1,26 +1,21 @@
+body{
+	background-image: url(images/bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 h1{
 	font-size: 8vw;
-
 }
 p{
 	width: 100%;
 	text-align: justify;
 	font-size: 1.6rem;
 }
-#p1{
-	background-color: blue;
-}
-
-#p2{
-	background-color: white;
-}
-
-#p3{
-	background-color: red;
-}
 #mairie{
-	width: 1280px;
+	width: 100%;
 	background-image: url(images/calais-l.jpg);
+	background-size:contain;
+	background-repeat: no-repeat;
 	height: 960px;
 }
 #logo{
@@ -28,27 +23,59 @@ p{
 	display: block;
 	margin:auto;
 }
+table{
+	font-size: 1.6rem;
+	border-spacing:0px;
+	width: 100%;
+}
+table th{
+	background-color:lightgrey;
+	border: solid 1px black;
+}
+table td{
+	border: solid 1px black;
+}
 label, input{
 	display: block;
 	font-size: 1.6rem;
 }
 
-@media screen and (max-width: 414px){
+@media screen and (max-width:1024px){
 	#logo{
-		width:100%;
+		width: 100%;
 	}
 	#mairie{
 		width: 100%;
 		background-size: contain;
 		background-repeat: no-repeat;
-		height: 37vh;
+		height: 50vh;
+	}
+	table th, table td{
+		display: block;
+		border:none;
+		text-align: center;
+		width:100%;
+	}
+	table {
+		border: solid black 1px;
+		border-top:none;
+		width:100%	
+	}
+	table th{
+		border-top : solid 1px black ;
 	}
 	@media (min-resolution:192dpi){
 		#mairie{
 			background-image: url(images/calais-xl.jpg);
 		}
+	}
 }
-}
-@media screen and (min-width: 480px) and (max-width:1024px){
 
+@media screen and (max-width: 414px){
+	#mairie{
+		height: 37vh;
+	}
+	input{
+		width:100%;
+	}
 }
